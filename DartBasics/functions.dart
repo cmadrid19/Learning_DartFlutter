@@ -2,6 +2,7 @@ main(List<String> args) {
   helloWolrd(); //Void
   printMyText("Hello world"); // parameters
   print(firstChar("")); //return
+  optionalParameters(15, 10);
 }
 
 void helloWolrd() {
@@ -20,3 +21,16 @@ String firstChar(String txt) {
   }
 }
 
+//optional parameters
+void optionalParameters(int number, [int optionalParameter = 0]) {
+  print("""
+  requiered parameter: $number \n 
+  optional parameter: $optionalParameter
+  """);
+}
+
+//lambda
+int ten() => 10;
+int five() => 5;
+int cero() => 0;
+void message(String txt) => print(txt);
