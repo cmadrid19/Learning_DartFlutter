@@ -1,5 +1,3 @@
-import 'dart:_js_helper';
-
 class Dni {
   String letter = "";
   //int number = 00000000;
