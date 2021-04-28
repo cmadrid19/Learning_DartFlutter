@@ -8,14 +8,14 @@ main(List<String> args) {
     try {
       print("Enter prize number: ");
       int number = int.parse(stdin.readLineSync().toString().toLowerCase());
-      print("Prize: ${prizes[number]}");
+      print("Prize: ${prizes[number] - 1} €.");
       correctInput = true;
     } on FormatException {
       print("You must enter a number.");
     } on RangeError {
       print("Prize does not exist.");
-    } catch(e) {
-      print("Unexpected error ocurred: ${e}");
+    } catch(error) {
+      print("Unexpected error ocurred: ${error}");
     }
   }
 }
